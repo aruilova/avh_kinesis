@@ -79,7 +79,7 @@ async function maybeCreateStream(localView) {
     if (master.localStream) {
         return;
     }
-    if (leftVideo.captureStream) {
+    if (localView.captureStream) {
         master.localStream = localView.captureStream();
         console.log('Captured stream from localview with captureStream',
             stream);
